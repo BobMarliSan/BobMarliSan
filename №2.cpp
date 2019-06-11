@@ -3,7 +3,7 @@
 using namespace std; 
 void Func(string s, int &a , int &e, int &y, int &u, int &i, int &o) {
 for(int p = 0; p < s.length(); p++)
-if (s[p] == ' a') {
+     if (s[p] == ' a') {
 a++;
 } 
 else if (s[p] == ' e') {
