@@ -6,7 +6,7 @@ for( int i = 0; i < 6; i++) {
 r[i] = 0;
 } 
 for(int i = 0; i < s.length(); i++) {
-if (s[i] == '  a') {
+    if (s[i] == '  a') {
 r[0] ++;
 } 
 else if (s[i] == ' e') {
@@ -36,20 +36,20 @@ int b[] = {0, 0, 0, 0, 0, 0};
 int c[] = {2, 3, 2, 2, 2, 0};
 bool test = false;
 for(int i = 0; i < (sizeof(f) / sizeof(f[0 ])); i++) {
-t1[i] = *(func("da da da" ) + i);
-t2[i] = *(func( "" ) + i);
-t3[i] = *(func("aiuofer oei ufd ae" ) + i);
+    t1[i] = *(func("da da da" ) + i);
+    t2[i] = *(func( "" ) + i);
+    t3[i] = *(func("aiuofer oei ufd ae" ) + i);
 } 
 for(int i = 0; i < (sizeof(f) / sizeof(f[0 ])); i++) {
-if (t1[i] != a[i] || t2[i] != b[i] || t3[i] != c[i]) {
+    if (t1[i] != a[i] || t2[i] != b[i] || t3[i] != c[i]) {
 test = true;
 } 
 } 
-if(!test) {
-cout << "NE OK";
+    if(!test) {     
+	cout << "NE OK";
 return 1;
 } else {
-cout << "OK";
+    cout << "OK";
 } 
 return 0;
 }
