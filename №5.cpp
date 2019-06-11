@@ -9,7 +9,7 @@ char* Func(string str) {
  string s = str;
 	char a[100];
 	for( int i = 0; i < str.length(); i++) {
-		if (str[i] == 'A' || str[i] == 'E' || str[i] == 'O' || str[i] == 'I' || str[i] == 'U' || str[i] == 'Y') {
+    if (str[i] == 'A' || str[i] == 'E' || str[i] == 'O' || str[i] == 'I' || str[i] == 'U' || str[i] == 'Y') {
  str[i] = tolower(str[i]);
 		}
 	}
@@ -19,7 +19,7 @@ char* Func(string str) {
 	return a;
 }
 int main(){
-if (strcmp(Func("LOREM"), "LoReM") || strcmp(Func("sit"), "sit")|| strcmp(Func(""), "") || strcmp(Func("sit AmeT"), "sit ameT")){
+    if (strcmp(Func("LOREM"), "LoReM") || strcmp(Func("sit"), "sit")|| strcmp(Func(""), "") || strcmp(Func("sit AmeT"), "sit ameT")){
  cout<<"NE OK";
 		return 1;
  } else {
