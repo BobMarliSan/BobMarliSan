@@ -20,10 +20,10 @@ char* Func(string str) {
 }
 int main(){
 if (strcmp(Func("LOREM"), "LoReM") || strcmp(Func("sit"), "sit")|| strcmp(Func(""), "") || strcmp(Func("sit AmeT"), "sit ameT")){
- cout<<"Nekorrektno";
+ cout<<"NE OK";
 		return 1;
  } else {
- cout<<"Korrektno";
+ cout<<"OK";
 	}
 	return 0;
 }
