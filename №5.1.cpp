@@ -1,27 +1,23 @@
-#include <iostream> 
+#include <iostream>
 using namespace std;
+
 int* func(string s) {
 	int r[6];
 	for (int i = 0; i < 6; i++) {
 		r[i] = 0;
 	}
 	for (int i = 0; i < s.length(); i++) {
-		if (s[i] == '  a') {
+		if (s[i] == 'a') {
 			r[0] ++;
-		}
-		else if (s[i] == ' e') {
+		} else if (s[i] == 'e') {
 			r[1] ++;
-		}
-		else if (s[i] == ' o') {
+		} else if (s[i] == 'o') {
 			r[2] ++;
-		}
-		else if (s[i] == ' i') {
+		} else if (s[i] == 'i') {
 			r[3] ++;
-		}
-		else if (s[i] == ' u') {
+		} else if (s[i] == 'u') {
 			r[4] ++;
-		}
-		else if (s[i] == ' y') {
+		} else if (s[i] == 'y') {
 			r[5] ++;
 		}
 	}
@@ -34,7 +30,7 @@ int main() {
 	int a[] = { 3, 0, 0, 0, 0, 0 };
 	int b[] = { 0, 0, 0, 0, 0, 0 };
 	int c[] = { 2, 3, 2, 2, 2, 0 };
-	bool test = false;
+	bool test = true;
 	for (int i = 0; i < (sizeof(f) / sizeof(f[0])); i++) {
 		t1[i] = *(func("da da da") + i);
 		t2[i] = *(func("") + i);
@@ -42,14 +38,13 @@ int main() {
 	}
 	for (int i = 0; i < (sizeof(f) / sizeof(f[0])); i++) {
 		if (t1[i] != a[i] || t2[i] != b[i] || t3[i] != c[i]) {
-			test = true;
+			test = false;
 		}
 	}
 	if (!test) {
 		cout << "NE OK";
 		return 1;
-	}
-	else {
+	} else {
 		cout << "OK";
 	}
 	return 0;
