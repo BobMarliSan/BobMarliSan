@@ -37,6 +37,18 @@ int main() {
 		t3[i] = *(func("aiuofer oei ufd ae") + i);
 	}
 	for (int i = 0; i < (sizeof(f) / sizeof(f[0])); i++) {
+		cout<<t1[i]<<" ";
+	}
+	cout<<endl;
+	for (int i = 0; i < (sizeof(f) / sizeof(f[0])); i++) {
+		cout<<t2[i]<<" ";
+	}
+	cout<<endl;
+	for (int i = 0; i < (sizeof(f) / sizeof(f[0])); i++) {
+		cout<<t3[i]<<" ";
+	}
+	cout<<endl;
+	for (int i = 0; i < (sizeof(f) / sizeof(f[0])); i++) {
 		if (t1[i] != a[i] || t2[i] != b[i] || t3[i] != c[i]) {
 			test = false;
 		}
